@@ -1,0 +1,84 @@
+body {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  color: #ffffff;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+/*properties of entire calculator*/
+.calculator {
+  width: 500px;
+  height: 700px;
+  background-color: #021628;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-image: linear-gradient(#062c4e, #000b13);
+}
+/*properties of just the top number display*/
+.display {
+  width: 500px;
+  height: 160px;
+  background-image: linear-gradient(to right, #000407, #062c4e);
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.display p {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 40px;
+}
+/* properties of button row */
+.container1 {
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+/* properties of buttons in each row*/
+.container1 * {
+  margin: 2px;
+  background-color: #01111d;
+  font-size: 40px;
+  text-align: center;
+  flex: 1;
+  padding: 10px 0;
+  transition: 0.2s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container1 *:hover {
+  cursor: pointer;
+  background-color: #01111dab;
+}
+
+.container1 *:active {
+  cursor: pointer;
+  background-color: #00000071;
+  transition: 0.1s;
+}
+
+/* different formatting for CE and = button */
+#equals {
+  flex: 2;
+  padding: 10px 2px;
+}
+
+#clear {
+  flex: 2;
+  padding: 10px 2px;
+}
