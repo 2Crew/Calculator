@@ -93,21 +93,25 @@ function equals() {
   switch (operator) {
     case "add":
       total1 = +(parseFloat(total1) + parseFloat(total2)).toFixed(12);
+      total1 = total1.toString();
       enter.textContent = total1;
       mode = 1;
       break;
     case "subtract":
       total1 = +(parseFloat(total1) - parseFloat(total2)).toFixed(12);
+      total1 = total1.toString();
       enter.textContent = total1;
       mode = 1;
       break;
     case "multiply":
       total1 = +(parseFloat(total1) * parseFloat(total2)).toFixed(12);
+      total1 = total1.toString();
       enter.textContent = total1;
       mode = 1;
       break;
     case "divide":
       total1 = +(parseFloat(total1) / parseFloat(total2)).toFixed(12);
+      total1 = total1.toString();
       enter.textContent = total1;
       mode = 1;
       break;
